@@ -1,0 +1,1 @@
+{"name":"Local: Atm","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\Atm.cpp","tests":[{"id":1742544688480,"input":"3 5 10\n3700\n\n3000\n\n2500\n\n400\n\n250\n\n300","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\Atm.cpp","group":"local","local":true}

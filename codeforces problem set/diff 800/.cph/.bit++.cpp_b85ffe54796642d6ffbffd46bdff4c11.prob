@@ -1,0 +1,1 @@
+{"name":"Local: bit++","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\codeforces problem set\\diff 800\\bit++.cpp","tests":[{"id":1751899142444,"input":"2\nX++\n--X\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\codeforces problem set\\diff 800\\bit++.cpp","group":"local","local":true}

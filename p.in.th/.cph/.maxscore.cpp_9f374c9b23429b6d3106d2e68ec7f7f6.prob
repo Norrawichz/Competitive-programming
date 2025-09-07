@@ -1,0 +1,1 @@
+{"name":"Local: maxscore","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\esus\\maxscore.cpp","tests":[{"id":1747044002749,"input":" 9\n AAAABBBBB","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\esus\\maxscore.cpp","group":"local","local":true}

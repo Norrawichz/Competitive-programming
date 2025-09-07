@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\test.cpp","tests":[{"id":1749051569619,"input":"7 15   \n3 3   \n3 3 6 10   \n5 8 6 14   \n2 14 4 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\test.cpp","group":"local","local":true}

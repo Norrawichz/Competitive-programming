@@ -1,0 +1,1 @@
+{"name":"Local: A1-009","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\A1-009.cpp","tests":[{"id":1743584944801,"input":"25\n10","output":"35\nfail"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\A1-009.cpp","group":"local","local":true}

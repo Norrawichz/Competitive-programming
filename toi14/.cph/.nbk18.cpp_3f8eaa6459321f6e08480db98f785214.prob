@@ -1,0 +1,1 @@
+{"name":"Local: nbk18","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi14\\nbk18.cpp","tests":[{"id":1748438658659,"input":"10 2 \n4 100 -50 -40 -30 -20 -10 40 10 31 \n4 \n2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi14\\nbk18.cpp","group":"local","local":true}

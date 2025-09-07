@@ -1,0 +1,1 @@
+{"name":"Local: mario","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\mario.cpp","tests":[{"id":1748275710636,"input":"2 2 \n1 2 \n9 5","output":""},{"id":1748275711225,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\mario.cpp","group":"local","local":true}

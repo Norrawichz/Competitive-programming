@@ -1,0 +1,1 @@
+{"name":"Local: nested","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\nested.cpp","tests":[{"id":1742725868621,"input":"4\n1 2 5 5","output":"1: 1 time(s)\n2: 1 time(s)\n5: 2 time(s)"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\nested.cpp","group":"local","local":true}

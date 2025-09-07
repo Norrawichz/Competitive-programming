@@ -1,0 +1,1 @@
+{"name":"Local: roomcount","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\roomcount.cpp","tests":[{"id":1749304878499,"input":"5 8\n########\n#..#...#\n####.#.#\n#..#...#\n########","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\roomcount.cpp","group":"local","local":true}

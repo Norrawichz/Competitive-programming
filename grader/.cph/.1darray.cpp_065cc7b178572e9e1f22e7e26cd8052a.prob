@@ -1,0 +1,1 @@
+{"name":"Local: 1darray","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\1darray.cpp","tests":[{"id":1749045545592,"input":"7 \n50 12 11 -99 -999 12 -28 ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\1darray.cpp","group":"local","local":true}

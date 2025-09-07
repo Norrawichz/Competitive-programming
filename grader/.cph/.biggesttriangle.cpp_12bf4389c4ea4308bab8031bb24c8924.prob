@@ -1,0 +1,1 @@
+{"name":"Local: biggesttriangle","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\biggesttriangle.cpp","tests":[{"id":1747922638006,"input":"5\n 1 1\n 2 2\n 3 3\n 1 4\n 4 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\biggesttriangle.cpp","group":"local","local":true}

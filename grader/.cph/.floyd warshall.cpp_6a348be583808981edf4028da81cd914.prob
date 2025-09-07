@@ -1,0 +1,1 @@
+{"name":"Local: floyd warshall","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\floyd warshall.cpp","tests":[{"id":1748278083051,"input":"5 5 \n1 2 1 \n1 3 2 \n2 3 1 \n2 4 6 \n3 4 1 ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\floyd warshall.cpp","group":"local","local":true}

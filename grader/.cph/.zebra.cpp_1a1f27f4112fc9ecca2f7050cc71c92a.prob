@@ -1,0 +1,1 @@
+{"name":"Local: zebra","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\zebra.cpp","tests":[{"id":1748536751843,"input":"897125 14783","output":""},{"id":1748538001356,"input":"4 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\zebra.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: skylight","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\p.in.th\\skylight.cpp","tests":[{"id":1754893116986,"input":" 3 4\n 3 2\n 7\n 1 2 3 4\n 4 3 2 1\n 1 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\p.in.th\\skylight.cpp","group":"local","local":true}

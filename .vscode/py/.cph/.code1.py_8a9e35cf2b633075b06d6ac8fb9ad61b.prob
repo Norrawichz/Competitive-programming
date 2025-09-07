@@ -1,0 +1,1 @@
+{"name":"Local: code1","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\.vscode\\py\\code1.py","tests":[{"id":1745223537717,"input":"123456\n1 1 1 1 1 1\n3","output":"123\n3\n[3, 4, 5]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\.vscode\\py\\code1.py","group":"local","local":true}

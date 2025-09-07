@@ -1,0 +1,1 @@
+{"name":"Local: Game routes","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\Game routes.cpp","tests":[{"id":1753544191087,"input":"4 5\n1 2\n2 4\n1 3\n3 4\n1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\Game routes.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: A3-019","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\A3-019.cpp","tests":[{"id":1745418589800,"input":"10 5\n10 20 15 17 24 19 10 30 12 30\n1 4 5 9 10","output":"0\n4\n0\n19\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\A3-019.cpp","group":"local","local":true}

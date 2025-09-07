@@ -1,0 +1,1 @@
+{"name":"Local: rationalknapsack","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\rationalknapsack.cpp","tests":[{"id":1748075789578,"input":"4 10 \n10 2 5 6 \n1 2 3 4 ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\rationalknapsack.cpp","group":"local","local":true}

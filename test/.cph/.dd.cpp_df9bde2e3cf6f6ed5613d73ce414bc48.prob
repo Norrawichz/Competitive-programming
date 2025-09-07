@@ -1,0 +1,1 @@
+{"name":"Local: dd","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\dd.cpp","tests":[{"id":1743870369631,"input":"RAARARAaAaArAAA","output":"yes 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\test\\dd.cpp","group":"local","local":true}

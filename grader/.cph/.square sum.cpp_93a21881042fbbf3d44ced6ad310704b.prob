@@ -1,0 +1,1 @@
+{"name":"Local: square sum","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\square sum.cpp","tests":[{"id":1742632288762,"input":"4 \n1 2 3 4 \n5 6 7 8 \n9 10 11 12 \n13 14 15 16 \n2 2 3 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\grader\\square sum.cpp","group":"local","local":true}

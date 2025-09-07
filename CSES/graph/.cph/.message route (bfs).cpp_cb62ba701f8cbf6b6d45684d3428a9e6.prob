@@ -1,0 +1,1 @@
+{"name":"Local: message route (bfs)","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\message route (bfs).cpp","tests":[{"id":1751189895205,"input":"5 5\n1 2\n1 3\n1 4\n2 3\n5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\CSES\\graph\\message route (bfs).cpp","group":"local","local":true}

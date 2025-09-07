@@ -1,0 +1,1 @@
+{"name":"Local: multiply matrix","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\multiply matrix.cpp","tests":[{"id":1743421585397,"input":"2 4 4 2\n1 2 3 4\n5 6 7 8\n1 2\n3 4\n5 6\n7 8","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\01\\multiply matrix.cpp","group":"local","local":true}
