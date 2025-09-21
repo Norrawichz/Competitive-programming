@@ -8,19 +8,19 @@ int main() {
     ll n,m,q,s,t;
     cin>> n>> m>> q>> s>> t;
 
-    vector<pair<ll,pair<ll,ll>>> quest(n);
+    vector<pair<ll,pair<ll,ll>>> id(m);
     vector<vector<pair<ll,ll>>> g(n);
     for (ll i=0; i<m; i++) {
         ll u,v,w;
         cin>> u>> v>> w;
-        quest[i].first=u;
-        quest[i].second.first=v;
-        quest[i].second.second=w;
+        id[i].first=u;
+        id[i].second.first=v;
+        id[i].second.second=w;
         g[u].push_back({v,w});
         g[v].push_back({u,w});
     }
 
-    vector<ll> dist(n, LONG_LONG_MAX), rdist(n, LONG_LONG_MAX);
+    vector<ll> dist(n, 1e18), rdist(n, 1e18);
     vector<bool> vst1(n,0), vst2(n,0);
     priority_queue<pair<ll,ll>, vector<pair<ll,ll>>, greater<pair<ll,ll>>> pq;
     pq.push({0, s});
@@ -56,11 +56,10 @@ int main() {
             }
         }
     }
-
     for (int i=0; i<q; i++) {
-        int q1;
+        ll q1;
         cin>> q1;
-        cout<< min(dist[quest[q1].first] + rdist[quest[q1].second.first] + quest[q1].second.second, rdist[quest[q1].first] + dist[quest[q1].second.first] + quest[q1].second.second)<< "\n";
+        cout<< min(dist[id[q1].first] + rdist[id[q1].second.first] + id[q1].second.second, rdist[id[q1].first] + dist[id[q1].second.first] + id[q1].second.second)<< "\n";
     }
     return 0;
 }

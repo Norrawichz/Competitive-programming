@@ -17,7 +17,6 @@ int main() {
     for (int i=0; i<15; i++) {
         sm+=a[i]/10 + a[i]%10;
     }
-
     if ((10-sm%10)%10 == s[15]-'0') cout<< "yes";
     else cout<< "no";
 }
