@@ -1,16 +1,26 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int x,y,ch=0;
-int main(void) {
-    for (x=1; x<=100; x++) {
-        if (x%3==0 || x%5==0) {
-            x++;
-            ch=ch+x;
-            ch=ch%24;
-            if (x%5==0) {
-                printf("%c",'A'+ch);
-            }
-        } 
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    long long n, m; 
+    if (!(cin >> n >> m)) return 0;
+
+    vector<long long> ans;
+    for (long long p = 2; p * p <= m; ++p) {
+        if (m % p == 0) {
+            ans.push_back(p - 1);
+            while (m % p == 0) m /= p;
+        }
     }
+    if (m > 1) ans.push_back(m - 1); // m เหลือเป็นจำนวนเฉพาะตัวสุดท้าย
+
+    sort(ans.begin(), ans.end());
+    for (int i = 0; i < (int)ans.size(); ++i) {
+        if (i) cout << ' ';
+        cout << ans[i];
+    }
+    cout << '\n';
+    return 0;
 }

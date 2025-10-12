@@ -1,20 +1,8 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-char st1[] = "ILOVECOMPUTER";
-char st2[] = {'K', 'M' ,'I', 'T', 'L', '1', '2', '3'};
-int x,y;
-char *p1, *p2;
 int main() {
 
-    p1 = st1;
-    p2 = st2+3;
-    for (x=2; x<=4; x++) {
-        p1++;
-        p2++;
-        printf("%c %c", *p2, *p1);
-        p1+=x;
-    }
     /*
 
     
