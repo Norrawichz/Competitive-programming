@@ -6,9 +6,9 @@ int main() {
     int t;
     cin>> t;
     while (t--) {
-        int a,b,c;
-        cin>> a>> b>> c;
-
-        cout<< ((abs(a-b)+c-1) / c +1)/2<< "\n";
+        int a,b,c,d;
+        cin>> a>> b>> c>> d;
+        if (a==b && a==c && a==d) cout<< "YES\n";
+        else cout<< "NO\n";
     }
 }
