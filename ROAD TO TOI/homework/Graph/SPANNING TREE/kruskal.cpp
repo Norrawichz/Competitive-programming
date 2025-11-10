@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
 
 int findroot(int cur, vector<int> &par) {
     if (par[cur] == cur) return cur;
@@ -8,36 +7,36 @@ int findroot(int cur, vector<int> &par) {
     return par[cur] = findroot(par[cur], par);
 }
 
-int32_t main() {
+int main() {
     cin.tie(0)->sync_with_stdio(0);
 
-    int n, m;
+    int n,m;
     cin>> n>> m;
-    vector<pair<int,pair<int,int>>> g;
-    for (int i = 0; i<m; i++) {
-        int u, v, w;
+
+    vector<pair<int, pair<int,int>>> g;
+    for (int i=0; i<m; i++) {
+        int u,v,w;
         cin>> u>> v>> w;
         g.push_back({w, {u,v}});
     }
 
     vector<int> par(n+1);
-    for (int i=1; i<=n; i++) par[i] = i;
-
+    iota(par.begin(), par.end(), 0);
     sort(g.rbegin(), g.rend());
-    int cost=0;
 
-    for (auto &x : g) {
-        int w=x.first;
-        int u=x.second.first;
-        int v=x.second.second;
+    int sm=0;
+    for (int i=0; i<m; i++) {
+        int w=g[i].first;
+        int u=g[i].second.first;
+        int v=g[i].second.second;
 
         int a=findroot(u, par);
         int b=findroot(v, par);
         if (a != b) {
             par[a] = b;
-            cost+=w-1;
+            sm+=w;
         }
     }
-    cout<< cost;
-    return 0;
+    for (int i=1; i<=n; i++) cout<< par[i]<< ' ';
+    cout<< sm;
 }

@@ -6,26 +6,21 @@ int main() {
     cin.tie(nullptr);
     int n, m;
     cin>> n>> m;
-    string s2;
-    for (int i = 0; i<m; i++) {
-        string s1;
-        cin>> s1;
-        if (s2.empty()) {
-            s2 = s1;
-            continue;
-        }
-        int count = 0;
-        for (int j = 0; j < n; j++) {
-            if (s1[j] != s2[j]) {
-                count++;
+    
+    vector<string> s(m);
+    for (int i=0; i<m; i++) cin>> s[i];
+
+    for (int i=1; i<m; i++) {
+        int diff=0;
+        for (int j=0; j<n; j++) {
+            if (s[i][j] != s[i-1][j]) {
+                diff++;
+            }
+            if (diff > 2) {
+                cout<< s[i-1];
+                return 0;
             }
         }
-        if (count > 2) {
-            cout<< s2;
-            return 0;
-        }
-        s2 = s1;
     }
-    cout<< s2;
-    return 0;
+    cout<< s[m-1];
 }

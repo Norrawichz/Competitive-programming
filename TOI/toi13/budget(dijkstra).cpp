@@ -1,71 +1,70 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int n, m, x, y, z;
-    cin>> n>> m>> x>> y>> z;
-    vector<vector<pair<int,int>>> g(n);
-    vector<long long> dis(n, LONG_LONG_MAX);
-    vector<int> vst(n, 0);
-    vector<long long> rdis(n, LONG_LONG_MAX);
-    vector<int> vst2(n, 0);
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
-    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq2;
+    cin.tie(0)->sync_with_stdio(0);
+    int n,m;
+    cin>> n>> m;
 
-    for (int i = 0; i<m; i++) {
+    int x,y,z;
+    cin>> x>> y>> z;
+
+    vector<vector<pair<ll,ll>>> g(n);
+    for (int i=0; i<m; i++) {
         int u,v,w;
-        cin>>u>>v>>w;
-        g[u].push_back({v, w});
-        g[v].push_back({u, w});
+        cin>> u>> v>> w;
+        g[u].push_back({v,w});
+        g[v].push_back({u,w});
     }
-    dis[x] = 0;
-    pq.push({0, x});
-    while(!pq.empty()) {
-        int d = pq.top().first, node = pq.top().second;
+
+    vector<ll> distx(n, LLONG_MAX), disty(n, LLONG_MAX);
+    priority_queue<pair<ll,ll>, vector<pair<ll,ll>>, greater<pair<ll,ll>>> pq;
+    pq.push({0,x});
+    distx[x]=0;
+    
+    while (!pq.empty()) {
+        int d=pq.top().first, cur=pq.top().second;
         pq.pop();
-        if (vst[node]) continue;
-        vst[node] = 1;
-        for (auto x : g[node]) {
-            int v = x.first,w=x.second;
-            if (dis[node]+w<dis[v] && dis[node]+w <= z) {
-                dis[v]=dis[node]+w;
-                pq.push({dis[v],v});
+
+        if (d > distx[cur]) continue;
+
+        for (auto x : g[cur]) {
+            int v=x.first, w=x.second;
+            if (distx[cur] + w < distx[v] && distx[cur] + w <= z) {
+                distx[v] = distx[cur]+w;
+                pq.push({distx[v], v});
             }
         }
     }
 
-    rdis[y] = 0;
-    pq2.push({0, y});
-    while(!pq2.empty()) {
-        int d = pq2.top().first, node = pq2.top().second;
-        pq2.pop();
-        if (vst2[node]) continue;
-        vst2[node] = 1;
-        for (auto x : g[node]) {
-            int v=x.first,w=x.second;
-            if (rdis[node]+w<rdis[v]) {
-                rdis[v] = rdis[node]+w;
-                pq2.push({rdis[v], v});
+    if (distx[y] != LLONG_MAX) {
+        cout<< y<< ' '<< distx[y]<< ' '<< 0;
+        return 0;
+    }
+    disty[y] = 0;
+    pq.push({0, y});
+    while (!pq.empty()) {
+        int d=pq.top().first, cur=pq.top().second;
+        pq.pop();
+
+        if (d > disty[cur]) continue;
+
+        for (auto x : g[cur]) {
+            int v=x.first, w=x.second;
+            if (disty[cur] + w < disty[v]) {
+                disty[v] = disty[cur]+w;
+                pq.push({disty[v], v});
             }
         }
     }
 
-    if (dis[y] <= z) {
-        cout<< y<<" "<<dis[y]<<" "<< 0;
-    }
-    else {
-        long long mn = LONG_LONG_MAX;
-        int node = -1;
-        for (int i = 0; i<n; i++) {
-            if (dis[i] <= z) {
-                if (rdis[i] < mn) {
-                    mn = rdis[i];
-                    node = i;
-                }
-            }
+    ll node=LLONG_MAX, dist=LLONG_MAX;
+    for (int i=0; i<n; i++) {
+        if (distx[i] <= z && (disty[i] < dist || (disty[i] == dist && i < node))) {
+            node = i;
+            dist = disty[i];
         }
-        cout<< node<< " "<<dis[node]<<" "<<mn;
     }
+    cout<< node<< ' '<< distx[node]<<' '<< dist;
 }
