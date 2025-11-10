@@ -1,1 +1,0 @@
-{"name":"Local: raider","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi10\\raider.cpp","tests":[{"id":1748841555547,"input":"5 \n4 \n1 1 3 8 \n0 1 1 0 \n1 6 5 7 \n1 3 2 3 \n2 5 2 0 ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi10\\raider.cpp","group":"local","local":true}

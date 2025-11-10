@@ -1,1 +1,0 @@
-{"name":"Local: explorer","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi19\\explorer.cpp","tests":[{"id":1748786294307,"input":"5  \n1 2 4 2 5 2 1 3 1 ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi19\\explorer.cpp","group":"local","local":true}

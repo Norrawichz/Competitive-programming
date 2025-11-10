@@ -1,1 +1,0 @@
-{"name":"Local: fence","url":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi9\\fence.cpp","tests":[{"id":1748161106448,"input":"5 8 \n6 \n0 7  \n1 3 \n2 0 \n3 6 \n4 2 \n4 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\norra\\OneDrive\\Desktop\\c++\\toi9\\fence.cpp","group":"local","local":true}
