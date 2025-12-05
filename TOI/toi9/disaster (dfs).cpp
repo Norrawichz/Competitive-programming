@@ -1,55 +1,64 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int n;
-bool ok=0;
+int n,m;
+set<int> st;
+vector<int> ans;
+bool fnd = false;
 
-void findpar(int cur, vector<int> &par) {
-    if (cur == par[cur]) return;
-
-    cout<< char(cur)<< ' ';
-    findpar(par[cur], par);
-}
-
-void dfs(int cur, int cnt, vector<bool> &vst, vector<int> &par, vector<vector<int>> &g) {
-    if (cnt == n) {
-        ok=1;
-        findpar(cur,par);
-        return;
-    }
-
+void dfs(int cur, int cnt, vector<bool> &vst, vector<vector<pair<int,int>>> &g) {
     for (auto &x : g[cur]) {
-        if (vst[x]) continue;
-        vst[x] = true;
-        par.push_back(x);
-        dfs(x, cnt+1, vst, par, g);
-        if (ok) return;
+        int v=x.first, numpath=x.second;
+        if (vst[numpath]) continue;
 
-        par.pop_back();
-        vst[x] = false;
+        if (cnt+1 == m) {
+            fnd=true;
+            ans.push_back(v);
+            return;
+        }
+
+        vst[numpath] = true;
+        ans.push_back(v);
+
+        dfs(v, cnt+1,vst, g);
+        
+        if (fnd) return;
+        ans.pop_back();
+        vst[numpath] = false; 
     }
 }
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);
+    cin>> m;
+    n=122;
+
+    vector<int> degree(n+1, 0);
+    vector<vector<pair<int,int>>> g(n+1);
+        
     
-    cin>> n;
-
-    vector<vector<int>> g('Z'+1);
-    for (int i=0; i<n; i++) {
-        string a;
-        cin>> a;
-        g[a[0]].push_back(a[1]);
-        g[a[1]].push_back(a[0]);
+    for (int i=0; i<m; i++) {
+        string s;
+        cin>> s;
+        char u=s[0],v=s[1];
+        st.insert(u);
+        st.insert(v);
+        degree[u]++;
+        degree[v]++;
+        g[u].push_back({v, i});
+        g[v].push_back({u, i});
     }
 
-    for (int i='A'; i<='Z' && !ok; i++) {
-        vector<bool> vst('Z'+1, 0);
-        vector<int> par('Z'+1);
-        iota(par.begin(), par.end(), 0);
-        vst[i] = true;
-
-        dfs(i, 0, vst, par, g);
+    vector<bool> vst(m, false);
+    int first;
+    for (auto &x : st) {
+        if (degree[x] % 2) {
+            first=x;
+            break;
+        }
+        first=x;
     }
-
+    ans.push_back(first);
+    dfs(first, 0, vst, g);
+    if (fnd) for (auto &x : ans) cout<< char(x)<< ' ';
 }

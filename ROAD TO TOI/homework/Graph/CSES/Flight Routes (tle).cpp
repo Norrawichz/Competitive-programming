@@ -23,6 +23,7 @@ int32_t main() {
         int dist=pq.top().first, cur=pq.top().second;
         pq.pop();
         
+        if (dist > )
         for (auto x : g[cur]) {
             int v=x.first, w=x.second;
             pq.push({w+dist, v});
